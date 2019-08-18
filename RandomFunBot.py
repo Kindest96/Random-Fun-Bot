@@ -8,6 +8,7 @@ def main():
     with open(configpath) as f:
         config = yaml.safe_load(f)
     
+    
     logging.info(config)
 
 if __name__ == "__main__":
