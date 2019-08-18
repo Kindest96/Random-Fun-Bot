@@ -3,7 +3,7 @@ import logging
 import telebot as telegram
 import yaml
 
-def main(configpath):
+def main(configpath, loglevel):
     
     with open(configpath, "r") as f:
         config = yaml.safe_load(f)
@@ -17,4 +17,6 @@ if __name__ == "__main__":
     
     configpath = "./config.yaml"
     
-    main(configpath)
+    loglevel = logging.INFO
+    
+    main(configpath, loglevel)
