@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+import logging
 import telebot as telegram
 import yaml
 
@@ -6,7 +8,7 @@ def main():
     with open(configpath) as f:
         config = yaml.safe_load(f)
     
-    print(config)
+    logging.info(config)
 
 if __name__ == "__main__":
     
