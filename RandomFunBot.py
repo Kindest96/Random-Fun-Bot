@@ -3,7 +3,7 @@ import logging
 import telebot as telegram
 import yaml
 
-def main():
+def main(configpath):
     
     with open(configpath, "r") as f:
         config = yaml.safe_load(f)
