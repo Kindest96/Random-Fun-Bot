@@ -9,7 +9,7 @@ def main(configpath, loglevel):
         config = yaml.safe_load(f)
     
     logging.basicConfig(format="%(levelname)-7s [%(asctime)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S", level=loglevel)
-    logging,info(config)
+    logging.info(config)
     
     print(config)
 
