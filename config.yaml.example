@@ -1,7 +1,0 @@
-bot_token: "YOUR_BOT_TOKEN_HERE"
-
-#Your JSON file here
-database: "/path/to/your/json.json"
-
-#Your User ID here
-creator: 123456789
